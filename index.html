@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Temperature Changes from 1995 to 2019</title>
+	</head>
+	<style>
+		body{
+			text-align: center;
+			padding: 10px,50px,10px,50px;
+			margin-left: 200px;
+			margin-right: 200px;
+		}
+		h1{
+			text-align: center;
+			font-family: times;
+			font-size: 40px;
+		}
+		
+		.intro{
+			text-align: left;
+			font-family:"microsoft yahei";
+		}
+		
+		h3,h2{
+			text-align: left;
+		}
+		
+		iframe{
+			text-align: center;
+		}
+
+	</style>
+	<body>
+		<h1>Temperature Changes of London from 1995 to 2019</h1>
+		<div>
+			<p class="intro">
+				The data source is from <a href="https://www.kaggle.com/sudalairajkumar/daily-temperature-of-major-cities" target="view_window">Kaggle</a>, which records the daily temperatures (°F) 
+						of the major cities worldwide from 1995 to 2019. The data visualisations were made by <a href="https://pyecharts.org/#/en-us/" target="view_window">Pyecharts</a>.
+			</p>
+
+			<p class="intro">
+				This report focuses on the temperature changes of London and is intended to find out the 
+				trend and regulation of them.
+			</p>
+			<p class="intro">
+				<h2>1.Data Analysis</h2> 
+				<p class="intro">
+					The data set record the daily temperatures of 321 cities among 125 countries from 1995 to 2019.
+					However, there are 79672 missing data which is recorded as '-99'. I fill them using the mean data.
+				</p>
+			</p>
+			<p>
+				<h2>2. Data Visulasations</h2> 
+				<h3>2.1 Calendar Heatmaps of the daily temperatures</h3>
+				<p class="intro">
+				The following calendar heatmaps are created based on the daily temperatures of London 
+				from 1995 to 2019. We can change the year by clicking the tabs on the top of the calendar 
+				heatmaps. By moving the mouse to the date, we can see the certain temperature of that day.
+				</p>
+				<p class="intro">
+				Through the calendars, we can find the temperature distribution of every year and see the temperature trend of London.
+				<p class="intro">
+				
+				In the years 2003, 2010, 2013, there were more low-temperature days than other years. 
+				On the contrary, in the years 1998, 2002, 2007, 2011, and after 2014, there were fewer 
+				low-temperature days, and the climate was warmer. Therefore, we can find that the hot 
+				year and the cold year appeared about every four years. But after 2014, the cold years 
+				became fewer, and the days with low temperatures were much less than the days with high 
+				temperatures. In other words, the temperatures of London become higher. For example, 
+				in 2010, there were 52 days with temperatures under 36℉ and 25 days with temperatures over 
+				84 ℉. However, in 2019, there were eight days with temperatures under 36 ℉.		
+				</p>
+			</p>
+			
+		</div>
+		<iframe   src="calendar.html" width="900" height="400"   frameborder="0"  name="Carlendar Heatmap"     scrolling="no">   
+		</iframe>
+		
+		<div>
+			<h3>2.2 Line charts of Monthly Highest and Lowest Temperatures</h3>
+			<p class="intro">
+				The Line Chart with Timelines shows the monthly highest and lowest 
+				temperatures of London from 1995 to 2019. A timeline bar at the bottom 
+				can be clicked or dragged to display the temperatures in different years. 
+				Audiences can play the charts automatically.
+			</p>
+			<p class="intro">
+				There are two dotted lines in the chart. The yellow line represents the 
+				average of the highest monthly temperatures for the year. The blue line 
+				represents the average of the lowest monthly temperatures for the year. 
+				Four teardrop-shaped dots represent the maximum and minimum values of each line.
+			</p>
+			<p class="intro">
+				By dragging the timeline bar, we can see that:
+				 <ul class="intro">
+					 <li>The highest temperature usually appeared in June, July, and August. 
+					 And the lowest temperature usually appeared in January, February, November, and December.</li>
+					  <li>
+						  The lowest temperature was 24.6℉, which appeared in 2018, and the highest temperature was 83.4℉, 
+						  which appeared in 2019.
+					  </li>
+					  <li>
+						  Although the whole weather became warmer these years, the temperature differences became more significant, too.
+					  </li>
+					  <li>
+						  There may be more hotter and colder days in the future years.
+					  </li>
+				</ul>
+				
+			</p>
+		</div>
+
+		
+		<iframe   src="line_chart.html" width="1000" height="600"   frameborder="0"  name="Line Chart with Timeline"     scrolling="no">   
+		</iframe>
+		
+		<div>
+			<h2>3. Visualisation Evaluation</h2>
+			<h3>3.1 Evaluation</h3>
+			<p class="intro">
+				I used two different types of visualisations to show the temperature changes in London. 
+				The calendar heatmap focuses on the distribution and the temperatures of each day. 
+				The line charts focus on the differences between the months and years.
+			</p>
+			<p class="intro">
+				The calendar heatmaps perform well so that audiences can quickly and directly 
+				know the temperature distributions between months and years. And they can easily 
+				find the temperature of a particular day.
+			</p>
+			<p class="intro">
+				However, the line charts do not show the significant differences of years. 
+				It seems that the monthly and yearly highest and lowest temperatures do not 
+				vary significantly. By seeing the line charts, audiences know that the temperatures 
+				 of London do not change rapidly, and the hottest and coldest months are always the 
+				 certain ones, which everyone knows.
+			</p>
+			<h3>3.2 Improvements</h3>
+			<p class="intro">
+				To improve the shortcomings, I can make many efforts. 
+				<ul class="intro">
+				<li> Find more data sets to add to the data. The period of the data is not long, 
+				just 25 years, and there are many missing data in it. It can hardly show the climate 
+				changes of the world or a region. I should find more temperature data sets to make 
+				it more convincing. Furthermore, I can create the visualisations of global temperature 
+				changes and do some analysis.</li>
+				<li>Link this data set to other data sets to find out the factors affecting temperatures.</li>
+				<li>Combine different visualisations using the same control panel, which can better show 
+				the changes with Timelines to the audiences.</li>
+				</ul>
+			</p>
+			
+		</div>
+	</body>
+</html>
